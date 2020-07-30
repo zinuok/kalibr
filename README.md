@@ -1,6 +1,18 @@
 ***
 ## install & run for my desktop(Ubuntu 18.04, ROS Melodic)
-### install
+### install 
++ from [here](https://blog.csdn.net/weixin_43715197/article/details/106730297)
+```
+$ sudo apt-get install python-setuptools python-rosinstall ipython libeigen3-dev libboost-all-dev doxygen libopencv-dev
+$ sudo apt-get install ros-melodic-vision-opencv ros-melodic-image-transport-plugins ros-melodic-cmake-modules 
+$ sudo apt-get install python-software-properties software-properties-common libpoco-dev python-matplotlib python-scipy python-git python-pip ipython 
+$ sudo apt-get install libtbb-dev libblas-dev liblapack-dev python-catkin-tools libv4l-dev
+$ sudo pip install python-igraph --upgrade
+
+$ cd ~/catkin_ws/src && git clone https://github.com/ethz-asl/Kalibr.git
+$ cd .. && catkin build -DCMAKE_BUILDTYPE=Release -j3
+$ source ~/catkin_ws/devel/setup.bash
+```
 -
 <br>
 
