@@ -13,7 +13,6 @@ $ kalibr_calibrate_cameras --models pinhole-equi pinhole-equi --topics /camera/i
 ```
 $ kalibr_camera_validator --chain chain.yaml --target aprilgrid_6x6.yaml
 ```
-<br>
 + step 3) camera-imu calibration
 ```
 $ kalibr_calibrate_imu_camera --cam chain.yaml --target aprilgrid_6x6.yaml --imu imu0.yaml --bag [ROS bag file]
