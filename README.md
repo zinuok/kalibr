@@ -1,5 +1,20 @@
 ***
-## install & run (Ubuntu 18.04, ROS Melodic)
+## install & run for my desktop(Ubuntu 18.04, ROS Melodic)
+### install
+```
+
+```
+### run
+```
++ step1) camera calibraion
+$ kalibr_calibrate_cameras --models pinhole-equi pinhole-equi --topics /camera/infra1/image_rect_raw /camera/infra2/image_rect_raw --bag [ROS bag file] --target aprilgrid_6x6.yaml'
+<br>
++ step2) verify result (0.1~0.2 px for a good calibration)
+$ kalibr_camera_validator --chain chain.yaml --target aprilgrid_6x6.yaml
+<br>
++ setp3) camera-imu calibration
+$ kalibr_calibrate_imu_camera --cam chain.yaml --target aprilgrid_6x6.yaml --imu imu0.yaml --bag [ROS bag file]
+```
 ***
 
 ![Kalibr](https://raw.githubusercontent.com/wiki/ethz-asl/kalibr/images/kalibr_small.png)
