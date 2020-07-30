@@ -13,8 +13,6 @@ $ cd ~/catkin_ws/src && git clone https://github.com/ethz-asl/Kalibr.git
 $ cd .. && catkin build -DCMAKE_BUILDTYPE=Release -j3
 $ source ~/catkin_ws/devel/setup.bash
 ```
--
-<br>
 
 ### run
 + step 1) camera calibraion
