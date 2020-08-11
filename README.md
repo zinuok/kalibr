@@ -15,9 +15,9 @@ $ source ~/catkin_ws/devel/setup.bash
 ```
 
 ### run
-+ step 1) camera calibraion
++ step 1) camera calibraion **pinhole-radtan for D435i**
 ```
-$ kalibr_calibrate_cameras --models pinhole-equi pinhole-equi --topics /camera/infra1/image_rect_raw /camera/infra2/image_rect_raw --bag [ROS bag file] --target aprilgrid_6x6.yaml'
+$ kalibr_calibrate_cameras --models pinhole-radtan pinhole-radtan --topics /camera/infra1/image_rect_raw /camera/infra2/image_rect_raw --bag [ROS bag file] --target aprilgrid_6x6.yaml'
 ```
 + step 2) verify result (0.1~0.2 px for a good calibration)
 ```
