@@ -31,3 +31,8 @@ $ kalibr_calibrate_imu_camera --cam chain.yaml --target aprilgrid_6x6.yaml --imu
 ```
 ***
 
+## Trouble shooting
++ Exception in thread block: [aslam::Exception] /home/zinuok/catkin_ws/src/kalibr/aslam_nonparametric_estimation/aslam_splines/src/BSplineExpressions.cpp:447: toTransformationMatrixImplementation() assert(_bufferTmin <= _time.toScalar() < _bufferTmax) failed [1.60032e+09 <= 1.60032e+09 < 1.60032e+09]: Spline Coefficient Buffer Exceeded. Set larger buffer margins!
+<br>
+=> change timeoffset-padding value to **0.1** at line 95 in kalibr/blob/master/aslam_offline_calibration/kalibr/python/kalibr_calibrate_imu_camera <br>
+from [here](https://github.com/ethz-asl/kalibr/issues/41) and [here](https://github.com/ethz-asl/kalibr/blob/master/aslam_offline_calibration/kalibr/python/kalibr_calibrate_imu_camera#L171)
