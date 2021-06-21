@@ -46,3 +46,6 @@ $ sudo apt install -y python2.7-igraph
 => change timeoffset-padding value to **0.1** at line 95 in kalibr/blob/master/aslam_offline_calibration/kalibr/python/kalibr_calibrate_imu_camera <br>
 from [here](https://github.com/ethz-asl/kalibr/issues/41) and [here](https://github.com/ethz-asl/kalibr/blob/master/aslam_offline_calibration/kalibr/python/kalibr_calibrate_imu_camera#L171)
 -->
++ ~ is protected within this context: from [here](https://github.com/ethz-asl/kalibr/issues/396#issuecomment-738373299)
+```
+```
