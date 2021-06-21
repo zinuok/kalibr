@@ -48,4 +48,5 @@ from [here](https://github.com/ethz-asl/kalibr/issues/41) and [here](https://git
 -->
 + ~ is protected within this context: from [here](https://github.com/ethz-asl/kalibr/issues/396#issuecomment-738373299)
 ```
+change line 466 protected into public in /usr/include/eigen3/Eigen/src/Core/MatrixBase.h 
 ```
